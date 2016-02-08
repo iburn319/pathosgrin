@@ -12,12 +12,12 @@ body {
   font-size: 12px;
   color: white;
 }
-#menu {
+div.single {
   background-color:rgba(128,128,128,0.5);
   border-radius: 10px 10px 0px 0px;
   margin-left:auto;
   margin-right:auto;
-  padding: 5px 0px 1px 0px;
+  padding: 5px 0px 10px 0px;
   text-align: center;
   width:1280px;
   font-size: 24px;
@@ -25,13 +25,6 @@ body {
   word-spacing: 10px;
   color: white;
   text-shadow: 2px 2px 100px rgb(255,128,255);
-}
-#single {
-  background-color:rgba(0,255,0,0.25);
-  margin-left:auto;
-  margin-right:auto;
-  padding: 5px 10px 5px 10px;
-  width:640px;
 }
 #left {
   background-color:rgba(0,255,0,0.25);
@@ -51,6 +44,7 @@ body {
 }
 a {
   color:black;
+  font-family: "Arial Black";
 }
 H1 {
   font-size: 42px;
@@ -87,17 +81,29 @@ iframe {
 </style>
 <body>
 <h1>Pathos Grin Publishing</h1>
-<div id="menu">
-  <p>Live Streams</p>
-  <div style="float:left;background-color:rgba(0,255,0,0.25);width:640px;">
-    <p>Twitch Channel</p>
-    <iframe src="http://player.twitch.tv/?channel=iburn319" frameborder="0" scrolling="no" height="378" width="640"></iframe>
+<div class="single">
+  <H2>Currently Grinning</h2>
+  <div id="content1" style="float:left;background-color:rgba(0,255,0,0.25);width:635px;height:480px;border-radius:0px 0px 0px 10px">
+    <h3>Twitch Channel</h3>
+    <iframe src="http://player.twitch.tv/?channel=iburn319" frameborder="0" scrolling="no" height="378" width="630"></iframe>
   </div>
-  <div style="float:right;background-color:rgba(0,255,0,0.25);width:640px;">
-    <p>YouTube Live Now</p>
-    <iframe width="640" height="378" src="https://www.youtube.com/embed/j4XZPY_9QUE" frameborder="0" allowfullscreen></iframe>
+  <div id="content2" style="float:left;background-color:rgba(0,255,0,0.25);width:635px;height:480px;border-radius:0px 0px 10px 0px;padding:0 0 0 5px">
+    <h3>YouTube Live Now</h3>
+    <iframe width="630" height="378" src="https://www.youtube.com/embed/j4XZPY_9QUE" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div>
+    <h2>Previously Grinned</h2>
+    <div style="background-color:rgba(0,255,0,0.25);border-radius:10px 10px 10px 10px;width:650px;margin-left:auto;margin-right:auto;">
+      <p>TMCx Presentations - 2015</p>
+      <iframe width="640" height="349" src="https://www.youtube.com/embed/videoseries?list=PLQ2OhvVQrB940OVEzWC-YAE-TTiCTstSr" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div style="background-color:rgba(0,255,0,0.25);border-radius:10px 10px 10px 10px;width:650px;margin-left:auto;margin-right:auto;">
+      <p>Scalable Marketing for Startups</p>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/GlhniAZRTKU" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
+
 <!--
 <div id="left">
   <div id="content1">
