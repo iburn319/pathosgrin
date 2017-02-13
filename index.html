@@ -84,11 +84,6 @@ iframe {
   var _paq = _paq || [];
   // tracker methods like "setCustomDimension" should be called before "trackPageView"
   _paq.push(['trackPageView']);
-//  _paq.push(['trackVisibleContentImpressions']);
-  _paq.push(['trackContentImpression', 'Content Name', 'Content Piece', 'http://www.example.com']);
-  div.addEventListener('click', function () {
-    _paq.push(['trackContentInteraction', 'tabActivated', 'Content Name', 'Content Piece', 'http://www.example.com']);
-});
   _paq.push(['enableLinkTracking']);
   (function() {
     var u="//analytics.pathosgrin.pub/piwik/";
@@ -113,18 +108,18 @@ Pathos Grin Publishing
 <div class="section">
   <p>Recent Grins</p>
   <div class="embed">
-    <iframe style="display:block;margin: 0 auto" width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLQ2OhvVQrB97fVZQneCYfzGCWkRfC_nL0" frameborder="0" allowfullscreen onclick="javascript:_paq.push(['trackEvent', 'video', 'recent']);">></iframe>
+    <iframe style="display:block;margin: 0 auto" width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLQ2OhvVQrB97fVZQneCYfzGCWkRfC_nL0" frameborder="0" allowfullscreen></iframe>
     <!--<iframe style="display:block;margin: 0 auto" width="853" height="480" src="https://www.youtube.com/embed/yVHjMC78u9k" frameborder="0" allowfullscreen></iframe>-->
   </div>
 </div>
 <div class="section" style="background-color:#660066;">
   <p>Previously Grinned</p>
   <div class="embed">
-    <iframe src="https://www.youtube.com/embed/yVHjMC78u9k" allowfullscreen class="addEventListener"></iframe>
+    <iframe src="https://www.youtube.com/embed/yVHjMC78u9k" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/nEpaeECZPKs" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/61sBkLc6Z68" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/DPXwBSwXers" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/VW8s2fqh52c" allowfullscreen onclick="javascript:_paq.push(['trackEvent', 'Video', 'Play', 'TMCx']);"></iframe>
+    <iframe src="https://www.youtube.com/embed/VW8s2fqh52c" allowfullscreen></iframe>
 
   </div>
 </div>
@@ -134,7 +129,7 @@ For more information, please contact iggy&#64;pathosgrin.pub
 </p>
 </div>
 <div id="contact">
-  <a href="mailto:founders@pathosgrin.pub" onclick="javascript:_paq.push(['trackEvent', 'Email', 'email_iggy']);">iggy&#64;pathosgrin.pub</a>
+  <a href="mailto:iggy@pathosgrin.pub" onclick="javascript:_paq.push(['trackEvent', 'email', 'click', 'iggy']);">iggy&#64;pathosgrin.pub</a>
 </div>
 </div>
 </body>
