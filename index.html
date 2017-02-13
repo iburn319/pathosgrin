@@ -84,7 +84,11 @@ iframe {
   var _paq = _paq || [];
   // tracker methods like "setCustomDimension" should be called before "trackPageView"
   _paq.push(['trackPageView']);
-  _paq.push(['trackVisibleContentImpressions']);
+//  _paq.push(['trackVisibleContentImpressions']);
+  _paq.push(['trackContentImpression', 'Content Name', 'Content Piece', 'http://www.example.com']);
+  div.addEventListener('click', function () {
+    _paq.push(['trackContentInteraction', 'tabActivated', 'Content Name', 'Content Piece', 'http://www.example.com']);
+});
   _paq.push(['enableLinkTracking']);
   (function() {
     var u="//analytics.pathosgrin.pub/piwik/";
